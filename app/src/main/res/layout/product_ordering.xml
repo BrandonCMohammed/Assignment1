@@ -4,49 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
     tools:context=".Product_Ordering_Activity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="400in"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
 
         <TextView
-            android:id="@+id/top_view"
+            android:id="@+id/Products"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:text="Testing"
+            android:text="Products:"
             android:textSize="40dp" />
 
         <CheckBox
-            android:id="@+id/checkbox"
+            android:id="@+id/Product1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox"
+            android:text="Product1"
             android:textSize="30dp" />
 
         <CheckBox
-            android:id="@+id/checkBox2"
+            android:id="@+id/Product2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="30dp"
-            android:text="CheckBox2" />
+            android:text="Product2" />
 
         <CheckBox
-            android:id="@+id/checkBox3"
+            android:id="@+id/Product3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="30dp"
-            android:text="CheckBox3" />
+            android:text="Product3" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/Selection"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="30dp"
-            android:text="TextView2" />
+            android:text="Selection:" />
+
+        <TextView
+            android:id="@+id/ProductListing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:hint = "Products selected will be shown here:"
+            />
+
+        <ImageButton
+            android:id="@+id/addToCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:src="@android:drawable/ic_input_add" />
+
+        <Button
+            android:id="@+id/completeOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Complete Order" />
 
 
     </LinearLayout>

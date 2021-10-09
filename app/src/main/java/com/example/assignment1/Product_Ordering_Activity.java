@@ -9,6 +9,6 @@ public class Product_Ordering_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.productOrdering);
+        setContentView(R.layout.product_ordering);
     }
 }
