@@ -62,12 +62,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="end"
+            android:paddingTop="10dp"
             android:src="@android:drawable/ic_input_add" />
 
         <Button
             android:id="@+id/completeOrder"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingTop="10dp"
             android:text="Complete Order" />
 
 
