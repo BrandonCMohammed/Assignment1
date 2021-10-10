@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment1">
         <activity
+            android:name=".Product_Specification_Activiy"
+            android:exported="true" />
+        <activity
             android:name=".Product_Ordering_Activity"
             android:exported="true">
             <intent-filter>

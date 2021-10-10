@@ -70,7 +70,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
-            android:text="Complete Order" />
+            android:text="Complete Order"
+            android:onClick="completeOrder"/>
 
 
     </LinearLayout>
