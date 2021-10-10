@@ -18,7 +18,7 @@ public class Product_Ordering_Activity extends AppCompatActivity {
 
     public void addItem(View view){
         TextView textview = (TextView) findViewById(R.id.ProductListing);
-        textview.setText("Text");
+        textview.setText("Welcome Casidy");
 
     }
 

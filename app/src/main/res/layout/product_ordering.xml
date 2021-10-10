@@ -18,41 +18,41 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Products:"
-            android:textSize="40dp" />
+            android:textSize="40sp" />
 
         <CheckBox
             android:id="@+id/Product1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Product1"
-            android:textSize="30dp" />
+            android:textSize="30sp" />
 
         <CheckBox
             android:id="@+id/Product2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:text="Product2" />
 
         <CheckBox
             android:id="@+id/Product3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:text="Product3" />
 
         <TextView
             android:id="@+id/Selection"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:text="Selection:" />
 
         <TextView
             android:id="@+id/ProductListing"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:layout_weight="1"
             android:hint = "Products selected will be shown here:"
             />
@@ -62,14 +62,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="end"
-            android:paddingTop="10dp"
-            android:src="@android:drawable/ic_input_add" />
+            android:paddingTop="10sp"
+            android:src="@android:drawable/ic_input_add"
+            />
 
         <Button
             android:id="@+id/completeOrder"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="10dp"
+            android:paddingTop="10sp"
             android:text="Complete Order"
             android:onClick="completeOrder"/>
 

@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".Product_Specification_Activity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rotation="60"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:src = "">
+
+    </ImageView>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,14 +26,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Choose topping"
+            android:text="Product Specifications"
             android:textSize="30dp"/>
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="top"
+            android:layout_gravity="end"
             android:onClick="goBack"
             android:text="Back" />
 
