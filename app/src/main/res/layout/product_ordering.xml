@@ -63,7 +63,7 @@
             android:layout_height="wrap_content"
             android:textOff="8-inch"
             android:textOn="10-inch"
-            android:onClick="onToggleClicked"/>
+            />
 
         <CheckBox
             android:id="@+id/Product3"
