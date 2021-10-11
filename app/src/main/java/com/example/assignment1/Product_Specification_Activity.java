@@ -19,4 +19,9 @@ public class Product_Specification_Activity extends AppCompatActivity {
         Intent intent = new Intent(this, Product_Ordering_Activity.class);
         startActivity(intent);
     }
+
+    public void configureOrder(View view){
+        Intent intent= new Intent(this, Product_Ordering_Activity.class);
+        startActivity(intent);
+    }
 }

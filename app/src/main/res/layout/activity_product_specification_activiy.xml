@@ -7,16 +7,13 @@
     tools:context=".Product_Specification_Activity">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:rotation="60"
-        android:scaleX="2"
-        android:scaleY="2"
-        android:src = "">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="0"
 
-    </ImageView>
+        android:src = "@drawable/logo" />
 
-    <LinearLayout
+        <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -26,19 +23,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Product Specifications"
-            android:textSize="30dp"/>
+            android:textSize="30sp"
+            android:text="Product Specifications" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:onClick="goBack"
-            android:text="Back" />
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:onClick="configureOrder"
+                android:text="Configure Order" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:onClick="goBack"
+                android:text="Back" />
 
 
-    </LinearLayout>
+        </LinearLayout>
 
 
 
