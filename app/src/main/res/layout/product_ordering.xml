@@ -32,78 +32,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Cinnamon Rolls"
-            android:textSize="25sp" />
+            android:textSize="30sp"
+            android:onClick="onCheckboxClicked"/>
 
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
 
-            <RadioGroup android:id="@+id/radioGroupRolls"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal" />
-
-            <RadioButton android:id="@+id/chocSyrup"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Chocolate Syrup"
-                />
-
-            <RadioButton android:id="@+id/caramelSyrup"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Caramel Syrup"
-                />
-
-            <RadioButton android:id="@+id/Icing"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Icing"
-                />
-
-        </RadioGroup>
 
         <CheckBox
             android:id="@+id/Product2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="Eggless Chocolate Cake" />
+            android:textSize="30sp"
+            android:text="Eggless Chocolate CupCake"
+            android:onClick="onCheckboxClicked"/>
 
-        <ToggleButton
-            android:id="@+id/toggleCakeSize"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textOff="8-inch"
-            android:textOn="10-inch"
-            />
 
         <CheckBox
             android:id="@+id/Product3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="Chocolate Chip Cookies" />
+            android:textSize="30sp"
+            android:text="Chocolate Chip Cookies"
+            android:onClick="onCheckboxClicked"/>
 
-        <RadioGroup android:id="@+id/radioGroupCookies"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <RadioButton android:id="@+id/Dozen"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="One Dozen"
-                />
-
-            <RadioButton android:id="@+id/twoDozen"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Two Dozen"
-                />
-
-    </RadioGroup>
 
 
         <TextView
@@ -141,9 +91,7 @@
             android:text="Complete Order"
             android:onClick="completeOrder"/>
 
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+
 
 
     </LinearLayout>
