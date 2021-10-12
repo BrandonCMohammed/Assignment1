@@ -7,10 +7,10 @@
     tools:context=".Product_Specification_Activity">
 
     <ImageView
+        android:id = "@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:rotation="0"
-
         android:src = "@drawable/logo" />
 
         <LinearLayout
@@ -18,13 +18,31 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
+            <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="30sp"
             android:text="Product Specifications" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RadioButton" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RadioButton" />
+            </RadioGroup>
 
             <Button
                 android:id="@+id/button3"
@@ -41,6 +59,7 @@
                 android:layout_gravity="right"
                 android:onClick="goBack"
                 android:text="Back" />
+
 
 
         </LinearLayout>

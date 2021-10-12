@@ -7,6 +7,13 @@
     android:padding="10dp"
     tools:context=".Product_Ordering_Activity">
 
+    <ImageView
+        android:id = "@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="0"
+        android:src = "@drawable/logo" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -27,28 +34,35 @@
             android:text="Cinnamon Rolls"
             android:textSize="25sp" />
 
-        <RadioGroup android:id="@+id/radioGroupRolls"
+        <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" />
+            android:orientation="vertical">
 
-        <RadioButton android:id="@+id/chocSyrup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Chocolate Syrup"
-            />
+            <RadioGroup android:id="@+id/radioGroupRolls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
 
-        <RadioButton android:id="@+id/caramelSyrup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Caramel Syrup"
-            />
+            <RadioButton android:id="@+id/chocSyrup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chocolate Syrup"
+                />
 
-        <RadioButton android:id="@+id/Icing"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Icing"
-            />
+            <RadioButton android:id="@+id/caramelSyrup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Caramel Syrup"
+                />
+
+            <RadioButton android:id="@+id/Icing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Icing"
+                />
+
+        </RadioGroup>
 
         <CheckBox
             android:id="@+id/Product2"
@@ -75,19 +89,22 @@
         <RadioGroup android:id="@+id/radioGroupCookies"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" />
+            android:orientation="vertical">
 
-        <RadioButton android:id="@+id/Dozen"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="One Dozen"
-            />
+            <RadioButton android:id="@+id/Dozen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="One Dozen"
+                />
 
-        <RadioButton android:id="@+id/twoDozen"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Two Dozen"
-            />
+            <RadioButton android:id="@+id/twoDozen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Two Dozen"
+                />
+
+    </RadioGroup>
+
 
         <TextView
             android:id="@+id/Selection"
@@ -123,6 +140,10 @@
             android:paddingTop="10sp"
             android:text="Complete Order"
             android:onClick="completeOrder"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
 
     </LinearLayout>
