@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,6 +17,9 @@ public class Product_Ordering_Activity extends AppCompatActivity {
 
     ArrayList<String> flavors = new ArrayList<String>();
     public static final String specifications = "choice";
+    Button btn;
+    TextView txt;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +38,7 @@ public class Product_Ordering_Activity extends AppCompatActivity {
         }else{
             textview.setText(totalSpecifications);
         }
+
 
     }
 
@@ -73,9 +78,20 @@ public class Product_Ordering_Activity extends AppCompatActivity {
 
 
     public void completeOrder(View view){
+    //display product string here on page
+    btn.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            txt.setText("Your order is: ");
+            //output products here
+        }
+    });
 
 
+    }
 
+    public void sendOrder(View view){
+    //display product string on whatsapp
     }
 
 }

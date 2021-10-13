@@ -7,6 +7,12 @@
     android:padding="10dp"
     tools:context=".Product_Ordering_Activity">
 
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.hfad.views.product_ordering">
+
     <ImageView
         android:id = "@+id/logo"
         android:layout_width="wrap_content"
@@ -83,18 +89,43 @@
             />
 
 
-        <Button
-            android:id="@+id/completeOrder"
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="10sp"
-            android:text="Complete Order"
-            android:onClick="completeOrder"/>
+            android:layout_height="match_parent"
+            tools:context="com.hfad.myconstraintlayout.product_ordering">
 
+            <Button
+                android:id="@+id/completeOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10sp"
+                android:text="Complete Order"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:onClick="completeOrder"/>
 
+            <Button
+                android:id="@+id/sendOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10sp"
+                android:text="Send Order"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:onClick="sendOrder"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </LinearLayout>
 
+    </ScrollView>
 
 </FrameLayout>
