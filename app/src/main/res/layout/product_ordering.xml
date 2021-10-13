@@ -7,11 +7,7 @@
     android:padding="10dp"
     tools:context=".Product_Ordering_Activity">
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context="com.hfad.views.product_ordering">
+
 
     <ImageView
         android:id = "@+id/logo"
@@ -20,84 +16,79 @@
         android:rotation="0"
         android:src = "@drawable/logo" />
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-
-        <TextView
-            android:id="@+id/Products"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Please select from our list of products:"
-            android:textSize="35sp" />
-
-        <CheckBox
-            android:id="@+id/Product1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Cinnamon Rolls"
-            android:textSize="30sp"
-            android:onClick="onCheckboxClicked"/>
-
-
-
-        <CheckBox
-            android:id="@+id/Product2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:text="Eggless Chocolate CupCake"
-            android:onClick="onCheckboxClicked"/>
-
-
-        <CheckBox
-            android:id="@+id/Product3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:text="Chocolate Chip Cookies"
-            android:onClick="onCheckboxClicked"/>
-
-
-
-        <TextView
-            android:id="@+id/Selection"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:text="Selection:" />
-
-        <TextView
-            android:id="@+id/ProductListing"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_weight="1"
-            android:hint = "Products selected will be shown here:"
-            />
-
-        <ImageButton
-            android:id="@+id/addToCart"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="end"
-            android:paddingTop="10sp"
-            android:src="@android:drawable/ic_input_add"
-            android:contentDescription="Add to cart button"
-            />
-
-
-
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context="com.hfad.myconstraintlayout.product_ordering">
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/Products"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please select from our list of products:"
+                android:textSize="35sp" />
+
+            <CheckBox
+                android:id="@+id/Product1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cinnamon Rolls"
+                android:textSize="30sp"
+                android:onClick="onCheckboxClicked"/>
+
+
+
+            <CheckBox
+                android:id="@+id/Product2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="Eggless Chocolate CupCake"
+                android:onClick="onCheckboxClicked"/>
+
+
+            <CheckBox
+                android:id="@+id/Product3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="Chocolate Chip Cookies"
+                android:onClick="onCheckboxClicked"/>
+
+
+
+            <TextView
+                android:id="@+id/Selection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="Selection:" />
+
+            <TextView
+                android:id="@+id/ProductListing"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:hint = "Products selected will be shown here:"
+                />
+
+            <ImageButton
+                android:id="@+id/addToCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingTop="10sp"
+                android:src="@android:drawable/ic_input_add"
+                android:contentDescription="Add to cart button"
+                />
+
+
 
             <Button
                 android:id="@+id/completeOrder"
@@ -121,11 +112,10 @@
                 app:layout_constraintRight_toRightOf="parent"
                 android:onClick="sendOrder"/>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    </LinearLayout>
 
+        </LinearLayout>
     </ScrollView>
 
 </FrameLayout>
