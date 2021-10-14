@@ -7,19 +7,18 @@ import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Button;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
 
-public class Product_Ordering_Activity extends AppCompatActivity {
+public class Product_Ordering_Activity<intent> extends AppCompatActivity {
+
+    Button btn= findViewById(R.id.completeOrder);
+    TextView txt;
 
     ArrayList<String> flavors = new ArrayList<String>();
     public static final String specifications = "choice";
-    Button btn;
-    TextView txt;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,23 +74,15 @@ public class Product_Ordering_Activity extends AppCompatActivity {
 
     }
 
+    public void completeOrder(View view) {
+        //display product string here on page
+        btn.setOnClickListener(new View.OnClickListener() {
 
-
-    public void completeOrder(View view){
-    //display product string here on page
-    btn.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            txt.setText("Your order is: ");
-            //output products here
-        }
-    });
-
-
-    }
-
-    public void sendOrder(View view){
-    //display product string on whatsapp
+            public void onClick(View view) {
+                Intent intent= new Intent(Product_Ordering_Activity.this,Complete_Order_Activity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }

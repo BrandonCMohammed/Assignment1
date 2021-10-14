@@ -61,7 +61,6 @@
                 android:onClick="onCheckboxClicked"/>
 
 
-
             <TextView
                 android:id="@+id/Selection"
                 android:layout_width="match_parent"
@@ -96,24 +95,7 @@
                 android:layout_height="wrap_content"
                 android:paddingTop="10sp"
                 android:text="Complete Order"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
                 android:onClick="completeOrder"/>
-
-            <Button
-                android:id="@+id/sendOrder"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="10sp"
-                android:text="Send Order"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                android:onClick="sendOrder"/>
-
-
-
 
         </LinearLayout>
     </ScrollView>
