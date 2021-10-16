@@ -14,11 +14,13 @@ import java.util.ArrayList;
 
 public class Product_Ordering_Activity<intent> extends AppCompatActivity {
 
-    Button btn= findViewById(R.id.completeOrder);
-    TextView txt;
+    //Button btn= findViewById(R.id.completeOrder);
+    //TextView txt;
 
-    ArrayList<String> flavors = new ArrayList<String>();
+    ArrayList<String> orders = new ArrayList<String>();
+    ArrayList<String> totalSpecifications = new ArrayList<String>();
     public static final String specifications = "choice";
+    String productListingSting = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,15 +32,19 @@ public class Product_Ordering_Activity<intent> extends AppCompatActivity {
 
         TextView textview = (TextView) findViewById(R.id.ProductListing);
 
-        Intent intent = getIntent();
-        String totalSpecifications = intent.getStringExtra(specifications);
-        if ( totalSpecifications == ""){
-            textview.setText("Products selected will be shown here:");
+
+        if (getIntent() != null && getIntent().getExtras() != null){
+            Intent intent = getIntent();
+            totalSpecifications = (ArrayList<String>) intent.getSerializableExtra(specifications);
+            orders = totalSpecifications;
+            for(String a : totalSpecifications){
+                productListingSting = productListingSting + a;
+            }
+            textview.setText(productListingSting) ;
         }else{
-            textview.setText(totalSpecifications);
+            textview.setText("Products selected will be shown here:");
+
         }
-
-
     }
 
     public void onCheckboxClicked(View view){
@@ -64,16 +70,16 @@ public class Product_Ordering_Activity<intent> extends AppCompatActivity {
                     product = checkbox.getText().toString();
                 }
         }
-
+        orders.add(product);
         Intent intent = new Intent(this, Product_Specification_Activity.class);
 
         if(checked){
-            intent.putExtra(Product_Specification_Activity.productChoice, product);
+            intent.putExtra(Product_Specification_Activity.productChoice, orders);
         }
         startActivity(intent);
 
     }
-
+    /*
     public void completeOrder(View view) {
         //display product string here on page
         btn.setOnClickListener(new View.OnClickListener() {
@@ -83,6 +89,6 @@ public class Product_Ordering_Activity<intent> extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }
+    }*/
 
 }

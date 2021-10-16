@@ -11,9 +11,13 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class Product_Specification_Activity extends AppCompatActivity {
 
     public static final String productChoice = "Product";
+    ArrayList<String> ordersSpec;
     String product = "";
 
     @Override
@@ -26,8 +30,13 @@ public class Product_Specification_Activity extends AppCompatActivity {
 
         Intent intent = getIntent();
         TextView textview = (TextView) findViewById(R.id.Choice);
-        product = intent.getStringExtra(productChoice) + "\n";
+        ordersSpec = (ArrayList<String>) intent.getSerializableExtra(productChoice);
+        int orderSpecSize = ordersSpec.size();
+        product = ordersSpec.get((orderSpecSize-1));
         textview.setText(product);
+
+        //product = intent.getStringExtra(productChoice) + "\n";
+        //textview.setText(product);
     }
 
     public void goBack(View view){
@@ -63,13 +72,18 @@ public class Product_Specification_Activity extends AppCompatActivity {
 
         if(toggle){
             toggleButtonOption = toggleButton.getText().toString();
+        }else{
+            toggleButtonOption = toggleButton.getTextOff().toString();
         }
 
 
 
         Intent intent = new Intent(this, Product_Ordering_Activity.class);
-        toSendBack = product + " " + choice + "\n" + toggleButtonOption;
-        intent.putExtra(Product_Ordering_Activity.specifications,toSendBack);
+        toSendBack = product + ":\n" + choice + "\n" + toggleButtonOption + "\n\n";
+        int listSize = ordersSpec.size();
+        ordersSpec.remove(listSize-1);
+        ordersSpec.add(toSendBack);
+        intent.putExtra(Product_Ordering_Activity.specifications,ordersSpec);
         startActivity(intent);
 
 
