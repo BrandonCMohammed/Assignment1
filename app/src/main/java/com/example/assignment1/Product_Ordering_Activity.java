@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class Product_Ordering_Activity<intent> extends AppCompatActivity {
 
-    //Button btn= findViewById(R.id.completeOrder);
+    Button btn= findViewById(R.id.completeOrder);
     //TextView txt;
 
     ArrayList<String> orders = new ArrayList<String>();
@@ -79,9 +79,8 @@ public class Product_Ordering_Activity<intent> extends AppCompatActivity {
         startActivity(intent);
 
     }
-    /*
+
     public void completeOrder(View view) {
-        //display product string here on page
         btn.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
@@ -89,6 +88,6 @@ public class Product_Ordering_Activity<intent> extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }*/
+    }
 
 }
