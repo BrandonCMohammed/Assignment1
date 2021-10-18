@@ -1,30 +1,28 @@
 package com.example.assignment1;
 
-import android.annotation.SuppressLint;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import androidx.appcompat.app.AppCompatActivity;
-import android.content.Intent;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 
+public class Complete_Order_Activity2 extends AppCompatActivity {
 
-public class Complete_Order_Activity extends AppCompatActivity {
-/*
+
     public static final String CompleteOrders = "Complete";
     ArrayList<String> completeOrdersList = new ArrayList<String>();
     public static String productListingSting = "";
 
- */
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_product_specification_activiy);
-        /*
+        setContentView(R.layout.activity_complete_order2);
+
         ImageView imageview = (ImageView) findViewById(R.id.logo);
         imageview.setImageAlpha(100);
 
@@ -33,26 +31,15 @@ public class Complete_Order_Activity extends AppCompatActivity {
             completeOrdersList = (ArrayList<String>) intent.getSerializableExtra(CompleteOrders);
 
             for(String a : completeOrdersList){
-                productListingSting = completeOrdersList + a;
+                productListingSting = productListingSting + a;
             }
 
             TextView textview = findViewById(R.id.textView2);
             textview.setText(productListingSting);
 
         }
-
-         */
-
-
-        }
-
-    public void completeOrder(View view){
-        //print product list here
-        System.out.print("Your complete order is: ");
-
     }
 
-    //@SuppressLint("QueryPermissionsNeeded")
     private void sendOrder(View view)
     {
         Intent intent = new Intent(Intent.ACTION_SEND);
@@ -67,6 +54,5 @@ public class Complete_Order_Activity extends AppCompatActivity {
         // Starting Whatsapp
         startActivity(intent);
     }
-
 
 }

@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class Product_Ordering_Activity<intent> extends AppCompatActivity {
 
-    Button btn= findViewById(R.id.completeOrder);
+
     //TextView txt;
 
     ArrayList<String> orders = new ArrayList<String>();
@@ -40,11 +40,25 @@ public class Product_Ordering_Activity<intent> extends AppCompatActivity {
             for(String a : totalSpecifications){
                 productListingSting = productListingSting + a;
             }
-            textview.setText(productListingSting) ;
+            textview.setText(productListingSting);
         }else{
             textview.setText("Products selected will be shown here:");
 
         }
+
+        Button button = (Button) findViewById(R.id.completeOrder);
+        button.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v){
+                Intent intent= new Intent(Product_Ordering_Activity.this,Complete_Order_Activity2.class);
+                intent.putExtra(Complete_Order_Activity2.CompleteOrders, orders);
+                startActivity(intent);
+            }
+
+        });
+
+
     }
 
     public void onCheckboxClicked(View view){
@@ -81,13 +95,12 @@ public class Product_Ordering_Activity<intent> extends AppCompatActivity {
     }
 
     public void completeOrder(View view) {
-        btn.setOnClickListener(new View.OnClickListener() {
 
-            public void onClick(View view) {
-                Intent intent= new Intent(Product_Ordering_Activity.this,Complete_Order_Activity.class);
-                startActivity(intent);
-            }
-        });
+        Intent intent= new Intent(Product_Ordering_Activity.this,Complete_Order_Activity2.class);
+        intent.putExtra(Complete_Order_Activity2.CompleteOrders, orders);
+        startActivity(intent);
+
+
     }
 
 }

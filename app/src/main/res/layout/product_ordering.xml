@@ -88,6 +88,7 @@
                 android:paddingTop="10sp"
                 android:src="@android:drawable/ic_input_add"
                 android:contentDescription="Add to cart button"
+                android:onClick="completeOrder"
                 />
 
 
@@ -98,7 +99,8 @@
                 android:layout_height="wrap_content"
                 android:paddingTop="10sp"
                 android:text="Complete Order"
-                android:onClick="completeOrder"/>
+
+                />
 
         </LinearLayout>
 

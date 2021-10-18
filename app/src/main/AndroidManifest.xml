@@ -11,7 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment1">
         <activity
+            android:name=".Complete_Order_Activity2"
+            android:exported="false" />
+        <activity
             android:name=".Product_Specification_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Complete_Order_Activity"
             android:exported="true" />
         <activity
             android:name=".Product_Ordering_Activity"
@@ -22,9 +28,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Complete_Order_Activity"
-            android:exported="true" />
     </application>
 
 </manifest>
