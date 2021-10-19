@@ -13,10 +13,10 @@ import java.util.ArrayList;
 
 public class Complete_Order_Activity2 extends AppCompatActivity {
 
-
     public static final String CompleteOrders = "Complete";
     ArrayList<String> completeOrdersList = new ArrayList<String>();
     public static String productListingSting = "";
+    public String orderHistory= " ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +34,8 @@ public class Complete_Order_Activity2 extends AppCompatActivity {
                 productListingSting = productListingSting + a;
             }
 
+            orderHistory= orderHistory + productListingSting + "\n \n";
+
             TextView textview = findViewById(R.id.textView2);
             textview.setText(productListingSting);
 
@@ -49,10 +51,15 @@ public class Complete_Order_Activity2 extends AppCompatActivity {
             Toast.makeText(this, "Please install whatsapp first.", Toast.LENGTH_SHORT).show();
             return;
         }
-
-        //sending order to whatsapp here
         // Starting Whatsapp
         startActivity(intent);
+    }
+
+    private void displayOrder(View view)
+    {
+        //orderHistory=orderHistory + productListingSting + "\n";
+        TextView textview = findViewById(R.id.textView3);
+        textview.setText(orderHistory);
     }
 
 }
