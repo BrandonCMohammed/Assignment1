@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:onClick="onCheckboxClicked"
             android:text="Cinnamon Rolls"
-            android:textSize="30sp" />
+            android:textSize="20sp" />
 
 
         <CheckBox
@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:onClick="onCheckboxClicked"
             android:text="Eggless Chocolate CupCake"
-            android:textSize="30sp" />
+            android:textSize="20sp" />
 
 
         <CheckBox
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:onClick="onCheckboxClicked"
             android:text="Chocolate Chip Cookies"
-            android:textSize="30sp" />
+            android:textSize="20sp" />
 
 
         <TextView
@@ -79,6 +79,7 @@
 
         </ScrollView>
 
+
         <ImageButton
             android:id="@+id/addToCart"
             android:layout_width="match_parent"
@@ -88,7 +89,6 @@
             android:onClick="completeOrder"
             android:paddingTop="10sp"
             android:src="@android:drawable/ic_input_add" />
-
 
         <Button
             android:id="@+id/completeOrder"

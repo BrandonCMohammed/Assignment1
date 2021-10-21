@@ -14,9 +14,6 @@ import java.util.ArrayList;
 
 public class Product_Ordering_Activity<intent> extends AppCompatActivity {
 
-
-    //TextView txt;
-
     ArrayList<String> orders = new ArrayList<String>();
     ArrayList<String> totalSpecifications = new ArrayList<String>();
     public static final String specifications = "choice";
@@ -28,7 +25,7 @@ public class Product_Ordering_Activity<intent> extends AppCompatActivity {
         setContentView(R.layout.product_ordering);
 
         ImageView imageview = (ImageView) findViewById(R.id.logo);
-        imageview.setImageAlpha(100);
+        imageview.setImageAlpha(10);
 
         TextView textview = (TextView) findViewById(R.id.ProductListing);
 

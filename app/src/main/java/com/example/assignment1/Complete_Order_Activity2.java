@@ -42,11 +42,14 @@ public class Complete_Order_Activity2 extends AppCompatActivity {
         }
     }
 
-    private void sendOrder(View view)
+    public void sendOrder(View view)
     {
-        Intent intent = new Intent(Intent.ACTION_SEND);
-        intent.setPackage("com.whatsapp");
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_SEND);
+        intent.putExtra(Intent.EXTRA_TEXT, "Your order is:  \n" + completeOrdersList);
+        intent.setType("text/plain");
 
+        intent.setPackage("com.whatsapp");
         if (intent.resolveActivity(getPackageManager()) == null) {
             Toast.makeText(this, "Please install whatsapp first.", Toast.LENGTH_SHORT).show();
             return;
@@ -55,7 +58,7 @@ public class Complete_Order_Activity2 extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void displayOrder(View view)
+    public void displayOrder(View view)
     {
         //orderHistory=orderHistory + productListingSting + "\n";
         TextView textview = findViewById(R.id.textView3);
