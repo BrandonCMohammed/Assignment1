@@ -16,7 +16,7 @@ public class Complete_Order_Activity2 extends AppCompatActivity {
     public static final String CompleteOrders = "Complete";
     ArrayList<String> completeOrdersList = new ArrayList<String>();
     public static String productListingSting = "";
-    private String orderHistory= " ";
+    public String orderHistory= " ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,7 @@ public class Complete_Order_Activity2 extends AppCompatActivity {
 
         ImageView imageview = (ImageView) findViewById(R.id.logo);
         imageview.setImageAlpha(60);
+
 
         if (getIntent() != null && getIntent().getExtras() != null) {
             Intent intent = getIntent();
@@ -46,7 +47,7 @@ public class Complete_Order_Activity2 extends AppCompatActivity {
     {
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_SEND);
-        intent.putExtra(Intent.EXTRA_TEXT, "Your order is:  \n" + completeOrdersList);
+        //intent.putExtra(Intent.EXTRA_TEXT, "Your order is:  \n" + completeOrdersList);
         intent.setType("text/plain");
 
         intent.setPackage("com.whatsapp");

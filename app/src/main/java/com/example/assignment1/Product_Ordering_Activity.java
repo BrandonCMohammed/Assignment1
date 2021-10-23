@@ -25,8 +25,7 @@ public class Product_Ordering_Activity<intent> extends AppCompatActivity {
         setContentView(R.layout.product_ordering);
 
         ImageView imageview = (ImageView) findViewById(R.id.logo);
-        //imageview.getBackground().setAlpha(10);
-        imageview.setImageAlpha(40);
+        imageview.setImageAlpha(60);
 
         TextView textview = (TextView) findViewById(R.id.ProductListing);
 
@@ -44,7 +43,7 @@ public class Product_Ordering_Activity<intent> extends AppCompatActivity {
 
         }
 
-        Button button = (Button) findViewById(R.id.completeOrder);
+        /*Button button = (Button) findViewById(R.id.completeOrder);
         button.setOnClickListener(new View.OnClickListener(){
 
             @Override
@@ -55,6 +54,8 @@ public class Product_Ordering_Activity<intent> extends AppCompatActivity {
             }
 
         });
+
+         */
 
 
     }
@@ -97,6 +98,7 @@ public class Product_Ordering_Activity<intent> extends AppCompatActivity {
         Intent intent= new Intent(Product_Ordering_Activity.this,Complete_Order_Activity2.class);
         intent.putExtra(Complete_Order_Activity2.CompleteOrders, orders);
         startActivity(intent);
+
 
     }
 

@@ -80,22 +80,13 @@
         </ScrollView>
 
 
-        <ImageButton
-            android:id="@+id/addToCart"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:contentDescription="Add to cart button"
-            android:gravity="end"
-            android:onClick="completeOrder"
-            android:paddingTop="10sp"
-            android:src="@android:drawable/ic_input_add" />
-
         <Button
             android:id="@+id/completeOrder"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="10sp"
             android:text="Complete Order"
+            android:onClick="completeOrder"
 
             />
 
