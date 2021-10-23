@@ -24,7 +24,8 @@ public class Complete_Order_Activity2 extends AppCompatActivity {
         setContentView(R.layout.activity_complete_order2);
 
         ImageView imageview = (ImageView) findViewById(R.id.logo);
-        imageview.setImageAlpha(100);
+        imageview.setImageAlpha(60);
+
 
         if (getIntent() != null && getIntent().getExtras() != null) {
             Intent intent = getIntent();
@@ -46,7 +47,7 @@ public class Complete_Order_Activity2 extends AppCompatActivity {
     {
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_SEND);
-        intent.putExtra(Intent.EXTRA_TEXT, "Your order is:  \n" + completeOrdersList);
+        //intent.putExtra(Intent.EXTRA_TEXT, "Your order is:  \n" + completeOrdersList);
         intent.setType("text/plain");
 
         intent.setPackage("com.whatsapp");

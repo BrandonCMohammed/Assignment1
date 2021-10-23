@@ -25,7 +25,7 @@ public class Product_Ordering_Activity<intent> extends AppCompatActivity {
         setContentView(R.layout.product_ordering);
 
         ImageView imageview = (ImageView) findViewById(R.id.logo);
-        imageview.setImageAlpha(10);
+        imageview.setImageAlpha(60);
 
         TextView textview = (TextView) findViewById(R.id.ProductListing);
 
@@ -43,7 +43,7 @@ public class Product_Ordering_Activity<intent> extends AppCompatActivity {
 
         }
 
-        Button button = (Button) findViewById(R.id.completeOrder);
+        /*Button button = (Button) findViewById(R.id.completeOrder);
         button.setOnClickListener(new View.OnClickListener(){
 
             @Override
@@ -54,6 +54,8 @@ public class Product_Ordering_Activity<intent> extends AppCompatActivity {
             }
 
         });
+
+         */
 
 
     }

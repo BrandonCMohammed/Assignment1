@@ -26,7 +26,7 @@ public class Product_Specification_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_product_specification_activiy);
 
         ImageView imageview = (ImageView) findViewById(R.id.logo);
-        imageview.setImageAlpha(100);
+        imageview.setImageAlpha(60);
 
         Intent intent = getIntent();
         TextView textview = (TextView) findViewById(R.id.Choice);
