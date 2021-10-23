@@ -16,7 +16,7 @@ public class Complete_Order_Activity2 extends AppCompatActivity {
     public static final String CompleteOrders = "Complete";
     ArrayList<String> completeOrdersList = new ArrayList<String>();
     public static String productListingSting = "";
-    public String orderHistory= " ";
+    private String orderHistory= " ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class Complete_Order_Activity2 extends AppCompatActivity {
         setContentView(R.layout.activity_complete_order2);
 
         ImageView imageview = (ImageView) findViewById(R.id.logo);
-        imageview.setImageAlpha(100);
+        imageview.setImageAlpha(60);
 
         if (getIntent() != null && getIntent().getExtras() != null) {
             Intent intent = getIntent();
