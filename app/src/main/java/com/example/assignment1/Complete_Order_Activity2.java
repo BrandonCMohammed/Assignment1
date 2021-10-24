@@ -16,7 +16,7 @@ public class Complete_Order_Activity2 extends AppCompatActivity {
     public static final String CompleteOrders = "Complete";
     ArrayList<String> completeOrdersList = new ArrayList<String>();
     public static String productListingSting = "";
-    public String orderHistory= " ";
+   // public String orderHistory= " ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +35,7 @@ public class Complete_Order_Activity2 extends AppCompatActivity {
                 productListingSting = productListingSting + a;
             }
 
-            orderHistory= orderHistory + productListingSting + "\n \n";
+          //  orderHistory= orderHistory + productListingSting + "\n \n";
 
             TextView textview = findViewById(R.id.textView2);
             textview.setText(productListingSting);
@@ -46,7 +46,7 @@ public class Complete_Order_Activity2 extends AppCompatActivity {
     public void sendOrder(View view)
     {
         Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_SEND);
+       // intent.setAction(Intent.ACTION_SEND);
         //intent.putExtra(Intent.EXTRA_TEXT, "Your order is:  \n" + completeOrdersList);
         intent.setType("text/plain");
 
@@ -62,8 +62,8 @@ public class Complete_Order_Activity2 extends AppCompatActivity {
     public void displayOrder(View view)
     {
         //orderHistory=orderHistory + productListingSting + "\n";
-        TextView textview = findViewById(R.id.textView3);
-        textview.setText(orderHistory);
+        //TextView textview = findViewById(R.id.textView3);
+        //textview.setText(orderHistory);
     }
 
 }
