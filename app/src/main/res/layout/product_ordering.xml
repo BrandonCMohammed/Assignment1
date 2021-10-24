@@ -61,7 +61,7 @@
             android:id="@+id/Selection"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Selection:"
+            android:text="CART:"
             android:textSize="30sp" />
 
         <ScrollView
