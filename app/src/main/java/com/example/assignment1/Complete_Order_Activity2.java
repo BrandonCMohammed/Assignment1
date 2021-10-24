@@ -13,9 +13,9 @@ import java.util.ArrayList;
 
 public class Complete_Order_Activity2 extends AppCompatActivity {
 
-    public static final String CompleteOrders = "Complete";
-    ArrayList<String> completeOrdersList = new ArrayList<String>();
-    public static String productListingSting = "";
+    //public static final String CompleteOrders = "Complete";
+    //ArrayList<String> completeOrdersList = new ArrayList<String>();
+    //public static String productListingSting = "";
    // public String orderHistory= " ";
 
     @Override
@@ -23,9 +23,10 @@ public class Complete_Order_Activity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_complete_order2);
 
+        /*
+
         ImageView imageview = (ImageView) findViewById(R.id.logo);
         imageview.setImageAlpha(60);
-
 
         if (getIntent() != null && getIntent().getExtras() != null) {
             Intent intent = getIntent();
@@ -41,6 +42,8 @@ public class Complete_Order_Activity2 extends AppCompatActivity {
             textview.setText(productListingSting);
 
         }
+
+         */
     }
 
     public void sendOrder(View view)
