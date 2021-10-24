@@ -13,17 +13,17 @@ import java.util.ArrayList;
 
 public class Complete_Order_Activity2 extends AppCompatActivity {
 
-    //public static final String CompleteOrders = "Complete";
-    //ArrayList<String> completeOrdersList = new ArrayList<String>();
-    //public static String productListingSting = "";
-   // public String orderHistory= " ";
+    public static final String CompleteOrders = "Complete";
+    ArrayList<String> completeOrdersList = new ArrayList<String>();
+    public static String productListingSting = "";
+    public String orderHistory= " ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_complete_order2);
 
-        /*
+
 
         ImageView imageview = (ImageView) findViewById(R.id.logo);
         imageview.setImageAlpha(60);
@@ -43,7 +43,7 @@ public class Complete_Order_Activity2 extends AppCompatActivity {
 
         }
 
-         */
+
     }
 
     public void sendOrder(View view)

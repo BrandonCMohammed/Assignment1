@@ -96,9 +96,10 @@ public class Product_Ordering_Activity<intent> extends AppCompatActivity {
     public void completeOrder(View view) {
 
         Intent intent= new Intent(Product_Ordering_Activity.this,Complete_Order_Activity2.class);
-        //intent.putExtra(Complete_Order_Activity2.CompleteOrders, orders);
-        startActivity(intent);
 
+        intent.putExtra(Complete_Order_Activity2.CompleteOrders, orders);
+
+        startActivity(intent);
 
     }
 

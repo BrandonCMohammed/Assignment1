@@ -12,7 +12,7 @@
         android:theme="@style/Theme.Assignment1">
         <activity
             android:name=".Complete_Activity_Order3"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Complete_Order_Activity2"
             android:exported="true" />
