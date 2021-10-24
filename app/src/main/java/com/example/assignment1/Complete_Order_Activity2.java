@@ -49,8 +49,8 @@ public class Complete_Order_Activity2 extends AppCompatActivity {
     public void sendOrder(View view)
     {
         Intent intent = new Intent();
-       // intent.setAction(Intent.ACTION_SEND);
-        //intent.putExtra(Intent.EXTRA_TEXT, "Your order is:  \n" + completeOrdersList);
+        intent.setAction(Intent.ACTION_SEND);
+        intent.putExtra(Intent.EXTRA_TEXT, "Your order is:  \n" + completeOrdersList);
         intent.setType("text/plain");
 
         intent.setPackage("com.whatsapp");
@@ -64,9 +64,9 @@ public class Complete_Order_Activity2 extends AppCompatActivity {
 
     public void displayOrder(View view)
     {
-        //orderHistory=orderHistory + productListingSting + "\n";
-        //TextView textview = findViewById(R.id.textView3);
-        //textview.setText(orderHistory);
+        orderHistory=orderHistory + productListingSting + "\n";
+        TextView textview = findViewById(R.id.textView3);
+        textview.setText(orderHistory);
     }
 
 }
