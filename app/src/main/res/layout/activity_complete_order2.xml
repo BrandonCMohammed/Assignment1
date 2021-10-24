@@ -49,15 +49,14 @@
 
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="495dp"
-        android:layout_marginTop="188dp"
-        app:layout_constraintBottom_toTopOf="@+id/sendOrder"
+        android:layout_width="387dp"
+        android:layout_height="267dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/logo"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:id="@+id/textView2"
@@ -75,14 +74,15 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="300sp"
+        android:layout_width="400dp"
+        android:layout_height="132dp"
+        android:layout_marginBottom="4dp"
         android:text="Order History"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/sendOrder"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
